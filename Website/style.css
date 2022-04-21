@@ -1,0 +1,133 @@
+body {
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 54px;
+}
+
+#meParagraph {
+  text-align: center;
+  font-size: 24px;
+}
+
+#meParagraph a {
+  text-decoration: none;
+  font-style: oblique;
+  color: rgb(106, 136, 126);
+}
+
+#indexImages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+nav {
+  background: rgba(66, 64, 64, 0.7);
+  backdrop-filter: blur(7px);
+  height: 70px;
+  width: 100%;
+}
+
+.logo {
+  color: cadetblue;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 80px;
+  margin: 0 50px;
+}
+
+/* nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  font-size: 25px;
+  color: aliceblue;
+  text-decoration: none;
+} */
+
+a.active {
+  background: rgb(106, 136, 126);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+#logo {
+  width: 60px;
+  margin: 0 0 -10px -35px;
+}
+
+.burger-button {
+  font-size: 30px;
+  color: aliceblue;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: block;
+}
+
+#check {
+  display: none;
+}
+
+nav ul {
+  position: fixed;
+  width: 35%;
+  background-color: rgba(140, 155, 161, 0.616);
+  height: 100vh;
+  text-align: center;
+  top: 60px;
+  right: -110%;
+  transition: all 1s;
+  display: none;
+}
+
+nav ul li {
+  display: block;
+  padding: 30px 0;
+}
+
+nav ul li a {
+  font-size: 25px;
+  color: aliceblue;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+}
+
+#check:checked ~ ul {
+  right: 0;
+  display: inline;
+}
+
+.animate { transition: transform 0.3s ease-out; }
+
+#blog-card{
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+#blog-card a{
+  text-decoration: none;
+  font-style: oblique;
+  color: rgb(106, 136, 126);
+}
+
+p{
+  margin: auto;
+  width: 85%;
+  margin-top: 15px;
+}
+
