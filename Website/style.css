@@ -167,7 +167,16 @@ nav ul li a {
 
 p{
   margin: auto;
-  width: 85%;
+  width: 65%;
   margin-top: 15px;
+  font-size: 20px;
 }
 
+h3{
+  text-align: center;
+  margin-top: 15px;
+}
+h2{
+  text-align: center;
+  margin-top: 15px;
+}
