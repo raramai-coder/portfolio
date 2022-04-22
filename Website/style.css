@@ -9,13 +9,16 @@ h1 {
 
 #meParagraph {
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 #meParagraph a {
   text-decoration: none;
   font-style: oblique;
   color: rgb(106, 136, 126);
+  
 }
 
 #indexImages {
@@ -23,6 +26,14 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+#work-title{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
 }
 
 nav {
