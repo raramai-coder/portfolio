@@ -54,8 +54,18 @@ nav {
 #aside-list{
   align-self:flex-end;
   text-align: right;
-  margin-right: 4px;
-  width: 30%;
+  margin-right: 35px;
+  width: 15%;
+  float: right;
+  height: 100%;
+  /* width: 200px; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  /* background-color: #111; */
+  overflow-x: hidden;
+  padding-top: 280px;
 }
 
 #aside-list ul{
@@ -69,8 +79,9 @@ nav {
 }
 
 #image-row{
-  width: 70vh;
-  align-items: center;
+  width: 85%;
+  align-items: flex-end;
+  padding-top: 30px;
 }
 
 #image-row img{
