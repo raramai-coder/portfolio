@@ -1,50 +1,28 @@
-const scrollElement = document.querySelectorAll(".js-scroll");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-scrollElements.forEach((el) => {
-    el.style.opacity = 0
-  })
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-  const elementInView = (el, percentageScroll = 100) => {
-    const elementTop = el.getBoundingClientRect().top;
-   
-    return (
-      elementTop <= ((window.innerHeight || document.documentElement.clientHeight)* (percentageScroll/100))
-    );
-  };
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  const displayScrollElement = () => {
-    scrollElement.classList.add('scrolled');
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-   
-  const hideScrollElement = () => {
-    scrollElement.classList.remove('scrolled');
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-   
-  const handleScrollAnimation = () => {
-    if (elementInView(scrollElement, scrollOffset)) {
-        displayScrollElement();
-    } else {
-      hideScrollElement();
-    }
-  }
-   
-  window.addEventListener('scroll', () => {
-    throttle(handleScrollAnimation, 250);
-  })
-
-  //initialize throttleTimer as false
-let throttleTimer = false;
- 
-const throttle = (callback, time) => {
-    //don't run the function while throttle timer is true
-    if (throttleTimer) return;
-     
-    //first set throttle timer to true so the function doesn't run
-    throttleTimer = true;
-     
-    setTimeout(() => {
-        //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed 
-        callback();
-        throttleTimer = false;
-    }, time);
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
