@@ -53,19 +53,22 @@ function moveSlides(n) {
 
 function showSlides(slideIndex) {
   let slides = document.getElementsByClassName("mySlides");
+  //console.info(slides.length);
 
   if (slideIndex > slides.length) {
     slideIndex = 1;
-  }
-  if (slideIndex < 0) {
+    //console.log("at 3");
+  } else if (slideIndex <= 0) {
     slideIndex = slides.length;
   }
 
-  console.log(slideIndex);
+  //console.log(slideIndex);
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
-  slides[slideIndex - 1].style.display = "block";
+  if (slides[slideIndex - 1] != null) {
+    slides[slideIndex - 1].style.display = "block";
+  }
 }
