@@ -200,6 +200,10 @@ h2{
   display: none;
 }
 
+#firstImage{
+  display: block;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
