@@ -5,22 +5,22 @@ function navigateTo(pageName) {
 
   switch (pageName) {
     case "home":
-      navLink.href = siteURL + "/index.html";
+      navLink.href = siteURL + "index.html";
       break;
     case "about":
-      navLink.href = siteURL + "/about.html";
+      navLink.href = siteURL + "about.html";
       break;
     case "design":
-      navLink.href = siteURL + "/designer.html";
+      navLink.href = siteURL + "designer.html";
       break;
     case "blog":
-      navLink.href = siteURL + "/blogs/blogs.html";
+      navLink.href = siteURL + "blogs/blogs.html";
       break;
     case "photography":
-      navLink.href = siteURL + "/photography/photography.html";
+      navLink.href = siteURL + "photography/photography.html";
       break;
     case "develop":
-      navLink.href = siteURL + "/developer.html";
+      navLink.href = siteURL + "developer.html";
       break;
     default:
       console.log("Unable to locate page to navigate to");
