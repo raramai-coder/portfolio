@@ -11,7 +11,7 @@ function navigateTo(pageName) {
       navLink.href = siteURL + "about.html";
       break;
     case "design":
-      navLink.href = siteURL + "designer.html";
+      navLink.href = siteURL + "design/designer.html";
       break;
     case "blog":
       navLink.href = siteURL + "blogs/blogs.html";
@@ -41,7 +41,7 @@ function navigateToFolder(pageName) {
       navLink.href = siteURL + "about.html";
       break;
     case "design":
-      navLink.href = siteURL + "designer.html";
+      navLink.href = siteURL + "design/designer.html";
       break;
     case "blog":
       navLink.href = siteURL + "blogs/blogs.html";
