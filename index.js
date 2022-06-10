@@ -36,16 +36,19 @@
 
 let currentSlideIndex = 1;
 
-//window.addEventListener("scroll", moveSlides(1));
-//window.onwheel = moveSlides(1);
-//window.onmousedown = moveSlides(1);
-//window.onwheel = alert("wagwan");
-
-window.addEventListener("wheel", (event) => {
-  const delta = Math.sign(event.deltaY);
-  moveSlides(delta);
-  //console.info(delta);
+document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("wheel", (event) => {
+    const delta = Math.sign(event.deltaY);
+    moveSlides(delta);
+    //console.info(delta);
+  });
 });
+
+// window.addEventListener("wheel", (event) => {
+//   const delta = Math.sign(event.deltaY);
+//   moveSlides(delta);
+//   //console.info(delta);
+// });
 
 function moveSlides(n) {
   showSlides((currentSlideIndex += n));
