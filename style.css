@@ -116,6 +116,25 @@ a.active {
   margin: 0 0 -10px -35px;
 }
 
+/* #region Navigation Styling */
+nav ul{
+ float: right;
+ margin-left: 40px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+nav ul li a{
+  font-size: 25px;
+  color: #001219;
+  text-decoration: none;
+  
+}
+
 .burger-button {
   font-size: 30px;
   color: #F08080;
@@ -123,41 +142,48 @@ a.active {
   margin-right: 40px;
   line-height: 80px;
   cursor: pointer;
-  display: block;
+  display: none;
 }
 
 #check {
   display: none;
 }
 
-nav ul {
-  position: fixed;
-  width: 35%;
-  background-color: #EDF6F9;
-  height: 100vh;
-  text-align: center;
-  top: 60px;
-  right: -110%;
-  transition: all 1s;
-  display: none;
-}
+/* Make burger button appear and top navigation disappear when screen width gets too small */
+@media (max-width:800px) {
+  .burger-button{
+    display: block;
+  }
 
-nav ul li {
-  display: block;
-  padding: 30px 0;
-}
+  nav ul{
+    position:fixed;
+    width: 100%;
+    background-color: #EDF6F9;
+    height: 100vh;
+    text-align: center;
+    top: 60px;
+    right: -110%;
+    transition: all 1s;
+  }
 
-nav ul li a {
-  font-size: 25px;
-  color: #001219;
-  /* text-transform: uppercase; */
-  text-decoration: none;
-}
+  nav ul li{
+    display: block;
+    padding: 30px 0;
+  }
 
-#check:checked ~ ul {
-  right: 0;
-  display: inline;
+  nav ul li a {
+    font-size: 25px;
+    color: #001219;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  #check:checked~ul{
+    right: 0;
+  }
 }
+/* #endregion */
+
 
 .animate { transition: transform 0.3s ease-out; }
 

@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../style.css" />
     <script
       src="https://kit.fontawesome.com/57b092fe03.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/navigation.js"></script>
     <title>Metadata</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-          <input type="checkbox" name="" id="check" />
-          <label for="check" class="burger-button"
-            ><i class="fa-solid fa-bars"></i
-          ></label>
-          <label for="logo" class="logo"></label>
-          <img src="/index/Rectangle 3.png" id="logo" />
-          <ul>
-            <li>
-              <a href="index.html" class="active">Home</a>
-            </li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../photography/photography.html">Photography</a></li>
-            <li><a href="../developer.html">Development</a></li>
-            <li><a href="../designer.html">Design</a></li>
-            <li><a href="../blogs/blogs.html">Blog</a></li>
-          </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label for="logo" class="logo"></label>
+        <img src="/index/Rectangle 3.png" id="logo" />
+        <ul>
+          <li>
+            <a href="#" id="home" onclick="navigateTo('home')">Home</a>
+          </li>
+          <li>
+            <a href="#" id="about" onclick="navigateTo('about')">About</a>
+          </li>
+          <li>
+            <a href="#" id="photography" onclick="navigateTo('photography')"
+              >Photography</a
+            >
+          </li>
+          <!-- <li>
+              <a href="#" id="develop" onclick="navigateTo('develop')"
+                >Development</a
+              >
+            </li> -->
+          <li>
+            <a href="#" id="design" onclick="navigateTo('design')">Design</a>
+          </li>
+          <li><a href="#" id="blog" onclick="navigateTo('blog')">Blog</a></li>
+        </ul>
+      </nav>
     </header>
-    
-  <h1>The uses of Metadata</h1>
-  <article>
-      <p>Metadata is simply put information about data. A simple example to illustrate what metadata is, is an envelope for a posted letter. Everything on the outside of the envelope, the address, the stamp etc. is the metadata and the data that it is providing information about is the letter inside the </p>
-        <p> Similarly semantic metadata is used in computer science to provide computers with the right information to be able to process data appropriately. Making it easier for computers to process, manage and use data. This helps give the computer some knowledge of what the data is and how it should be used. </p>
-        <p>This brings us to metadata in terms of the web. HTML tags can provide metadata to web browsers and search engines that help them process the webpage's data and display it to the right user depending on that user's needs. HTML tags also tell the web browser how the data on the webpage should be displayed to the user, as well as some knowledge onto what the information is that is actually on the webpage. HTML acts as structured referential data helping web browsers and search engines classify, find and use data in a way that is accurate and appropriate.</p>
-    </article>  
-</body>
+
+    <h1>The uses of Metadata</h1>
+    <article>
+      <p>
+        Metadata is simply put information about data. A simple example to
+        illustrate what metadata is, is an envelope for a posted letter.
+        Everything on the outside of the envelope, the address, the stamp etc.
+        is the metadata and the data that it is providing information about is
+        the letter inside the
+      </p>
+      <p>
+        Similarly semantic metadata is used in computer science to provide
+        computers with the right information to be able to process data
+        appropriately. Making it easier for computers to process, manage and use
+        data. This helps give the computer some knowledge of what the data is
+        and how it should be used.
+      </p>
+      <p>
+        This brings us to metadata in terms of the web. HTML tags can provide
+        metadata to web browsers and search engines that help them process the
+        webpage's data and display it to the right user depending on that user's
+        needs. HTML tags also tell the web browser how the data on the webpage
+        should be displayed to the user, as well as some knowledge onto what the
+        information is that is actually on the webpage. HTML acts as structured
+        referential data helping web browsers and search engines classify, find
+        and use data in a way that is accurate and appropriate.
+      </p>
+    </article>
+  </body>
 </html>
