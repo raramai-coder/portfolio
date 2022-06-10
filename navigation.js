@@ -1,7 +1,7 @@
 function navigateTo(pageName) {
   let navLink = document.getElementById(pageName);
-  let siteURL = "portfolio";
-  //let siteURL = "";
+  //let siteURL = "portfolio";
+  let siteURL = "";
 
   switch (pageName) {
     case "home":
