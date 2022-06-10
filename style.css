@@ -2,6 +2,7 @@ body {
   height: 100vh;
   color: #001219;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #EDF6F9;
 }
 
 h1 {
@@ -18,8 +19,53 @@ h3{
 }
 h2{
   text-align: center;
-  margin-top: 15px;
+  margin-top: 25px;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+  font-weight: bold;
 }
+
+/* #region Blog Cards on Blog Main Page */
+.blog-card{
+  transition: 0.3s;
+  border: #FFDAB9;
+  border-radius: 25px;
+  border-style:solid;
+  border-width: 2.5px;
+  padding-bottom: 15px;
+  height: 200px;
+  max-width: 525px;
+}
+
+/* .blog-card :hover{
+  background-color: #fff;
+} */
+
+.blog-card a{
+  text-decoration: none;
+  color: #001219;
+  font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+.cardHolder{
+  text-decoration: none;
+  color: #001219;
+}
+
+.cardHolder:hover{
+  background-color: #ffdab97d;
+  border-radius: 25px;
+}
+
+#gridContainer{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+/* #endregion */
 
 
 #meParagraph {
@@ -201,16 +247,6 @@ nav ul li a{
 
 .animate { transition: transform 0.3s ease-out; }
 
-#blog-card{
-  margin-left: 40px;
-  margin-top: 10px;
-}
-
-#blog-card a{
-  text-decoration: none;
-  font-style: oblique;
-  color: rgb(106, 136, 126);
-}
 
 p{
   margin: auto;
