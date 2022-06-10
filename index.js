@@ -44,12 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// window.addEventListener("wheel", (event) => {
-//   const delta = Math.sign(event.deltaY);
-//   moveSlides(delta);
-//   //console.info(delta);
-// });
-
 function moveSlides(n) {
   showSlides((currentSlideIndex += n));
 }
