@@ -1,24 +1,26 @@
 function navigateTo(pageName) {
   let navLink = document.getElementById(pageName);
+  let siteURL = "portfolio";
+  //let siteURL = "";
 
   switch (pageName) {
     case "home":
-      navLink.href = "../index.html";
+      navLink.href = siteURL + "/index.html";
       break;
     case "about":
-      navLink.href = "../about.html";
+      navLink.href = siteURL + "/about.html";
       break;
     case "design":
-      navLink.href = "../designer.html";
+      navLink.href = siteURL + "/designer.html";
       break;
     case "blog":
-      navLink.href = "../blogs/blogs.html";
+      navLink.href = siteURL + "/blogs/blogs.html";
       break;
     case "photography":
-      navLink.href = "../photography/photography.html";
+      navLink.href = siteURL + "/photography/photography.html";
       break;
     case "develop":
-      navLink.href = "../developer.html";
+      navLink.href = siteURL + "/developer.html";
       break;
     default:
       console.log("Unable to locate page to navigate to");
