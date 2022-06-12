@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/57b092fe03.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../navigation.js"></script>
+    <title>Critical Reflection of my UI/UX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label for="logo" class="logo"></label>
+        <img src="/index/Rectangle 3.png" id="logo" />
+        <ul>
+          <li>
+            <a href="#" id="home" onclick="navigateToFolder('home')">Home</a>
+          </li>
+          <li>
+            <a href="#" id="about" onclick="navigateToFolder('about')">About</a>
+          </li>
+          <li>
+            <a
+              href="#"
+              id="photography"
+              onclick="navigateToFolder('photography')"
+              >Photography</a
+            >
+          </li>
+          <!-- <li>
+              <a href="#" id="develop" onclick="navigateTo('develop')"
+                >Development</a
+              >
+            </li> -->
+          <li>
+            <a href="#" id="design" onclick="navigateToFolder('design')"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a href="#" id="blog" onclick="navigateToFolder('blog')">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Critical Reflection of my UI/UX</h1>
+    <article>
+      <p>
+        Selected Reading – It’s not you. Bad doors are everywhere.
+      </p>
+
+      <h2>Norman Doors</h2>
+      <p>
+        The video uploaded by Vox follows the creator, Joe Posner, as he complains about a door at his office that he keeps using incorrectly and consequently hates. He speaks to other employees who say that the door also confuses them and that they have witnessed other people misuse the door as well. This leads him to contact Don Norman the man who wrote a book on the design of everyday things that specifically pointed out how doors are often terribly designed (Vox, 2016).
+      </p>
+      <p>
+        Norman states that it is not that people are stupid for pushing instead of pulling these doors, but that the doors themselves are designed poorly (Vox, 2016). The concept of discoverability proclaims that you should be able to look at an object and understand how its meant to be used (Vox, 2016). Now these doors will have handlebars on both sides instructing the user to grab onto them and intuitively the next logical step is to pull. But on one side this is not the case as the user is supposed to push. So, the door is giving the user misleading design signals (Brandall, 2016).
+      </p>
+      <p>
+        This kind of poorly designed door is called a Norman Door, named after the man, but not by him to his amusement (Alexander, 2016). Its easy to spot a Norman Door, if you don’t know whether to push or pull a door, that’s a Norman Door (Morgan, 2018). If it needs instructions to tell you how to use it, that’s a Norman Door (Aguilera, 2016). And finally, if you and many other people struggle to use that door then it is most definitely a Norman Door (Vox, 2016).
+      </p>
+      <p>
+        Because if you think about it, it should be immediately apparent how a door ought to be used (Morgan, 2018) and doors are not so complicated as to warrant an instruction on how to use them (Aguilera, 2016).
+      </p>
+      <p>
+        Don Norman expands in his book on how understanding the design of everyday things can be used to design better software products (Rekhi, 2017). He states six principles for good design: visibility, feedback, constraints, mapping, consistency, and affordance. I will be analysing my website based on these six principles to critically engage with whether my UI design is acceptable.
+      </p>
+
+      <h2>The 6 Principles of Design</h2>
+      
+      <h3>Visibility</h3>
+      <p>
+        Lack of visibility means that decreases a user’s awareness of an element and with it the ability of that user to understand how to use and to use it well (Rekhi, 2017). This is why a lot of mobile apps have shifted from having hamburger menus to bottom navigation bars. Similarly in my own website my navigation pages were stored in a hamburger menu, this was bad for visibility and also extracted a lot more effort from the user in terms of constantly needing to open the hamburger in order to be able to find links to important pages. 
+      </p>
+      <p>
+        So, I changed this to have the menu laid out horizontally in the navigation bar on top and only changing to hamburger menu when the screen width was too small. 
+      </p>
+
+      <h3>Feedback</h3>
+      <p>
+        When a user takes an action, it should be immediately clear to them what has taken place and what consequences that action has had (Rekhi, 2017). I feel that the slideshow on the home page gives good feedback to the user on what has happened once they’ve scrolled their mouse. The image block goes white, drawing the user’s attention and awareness to the image and then the new images fades in. This way the user knows immediately that on scrolling the image being shown will change.
+      </p>
+      <p>
+        Also having the current page in the navigation bar have a pink background gives feedback to the user on which page they selected. When the user selects a page to navigate to, their eyes are on the navigation bar and when the new page loads their eyes are probably still on the navigation bar (granted the page loaded with a fast enough speed). So having the page they selected now have a pink background is immediate feedback to them that that is the page they have been navigated to.
+      </p>
+
+      <h3>Constraints</h3>
+      <p>
+        Limiting the range of possible interactions for elements simplifies the interface and helps user better understand and master how to use those elements (Rekhi, 2017).  For majority of the elements on my website there is only one possible action for it either clicking or simply reading/viewing. So, on this measure my website fares well.
+      </p>
+
+      <h3>Mapping</h3>
+      <p>
+        There must be a clear relationship between controls and the effect they have (Rekhi, 2017). So, for example a stove plate where all the controls are aligned horizontally but the plates are in a grid has poor mapping, but one where the controls are also aligned in a grid with the matching control for a plate being in the same grid position has good mapping.
+      </p>
+      <p>
+        The slideshow on the main page technically has poor mapping, because the images slide horizontally the scrolling motion on the mouse is a scrolling one. But this is overwritten by the fact that it is convention for slideshows or PowerPoints to move horizontally with mouse scrolling vertically. So, users have been conditioned to expect this behaviour and are thus able to use it.
+      </p>
+
+      <h3>Consistency</h3>
+      <p>
+        Similar operations and elements must be used for similar tasks (Rekhi, 2017). I have tried to achieve consistency through the colour design of my website. On the site any element that is pink or one of its hues is a clickable element. All links for example are pink. And on the blog page, the blog cards have a white border, and when hovered over the background colour of the blog card changes to pink. Indicating to the user that is something that can be clicked on. 
+      </p>
+
+      <h3>Affordance</h3>
+      <p>
+        Affordance is essentially a ‘hint’ provided by an object’s design that lets people know how to use it when they look at it (Rekhi, 2017 & Morgan, 2018). My biggest shortfall with the slideshow on the home page is that it has very weak affordance. Because the images slide on scroll there are not ‘next’ buttons on screen, and this means that to the user all they see on screen is an image. They might assume that the image is simply a static image with no real purpose aside from aesthetic. There is nothing on screen to indicate to them that they must scroll. 
+      </p>
+      <p>
+        This is something that I need to rectify by redesigning the page to show to the user that they have a slideshow of images they can scroll through instead of how it affords right now: as a static image on a webpage.
+      </p>
+
+      <h2>Sources</h2>
+      <p>
+        Aguilera, D., 2016. Norman Doors, The Design of Everyday Things, and Better UX. [online] Nelio Software. Available at: https://neliosoftware.com/blog/norman-doors-the-design-of-everyday-things-and-better-ux 
+      </p>
+      <p>
+        Alexander, A., 2016. Norman Doors and design | alvinalexander.com. [online] Alvinalexander.com. Available at: https://alvinalexander.com/design/norman-doors-design-photos-software-design 
+      </p>
+      <p>
+        Brandall, B., 2016. Using Norman doors to inform your next design | Inside Design Blog. [online] Invisionapp.com. Available at: https://www.invisionapp.com/inside-design/norman-doors-ux-design 
+      </p>
+      <p>
+        Morgan, J., 2018. Intro to UX: the Norman door. [online] Medium. Available at: https://uxdesign.cc/intro-to-ux-the-norman-door-61f8120b6086 
+      </p>
+      <p>
+        Rekhi, S., 2017. Don Norman’s Principles of Interaction Design. [online] Medium. Available at: https://medium.com/@sachinrekhi/don-normans-principles-of-interaction-design-51025a2c0f33 
+      </p>
+      <p>
+        Vox, 2016. It's not you. Bad doors are everywhere.. [video] Available at: https://www.youtube.com/watch?v=yY96hTb8WgI 
+      </p>
+    </article>
+  </body>
+</html>
