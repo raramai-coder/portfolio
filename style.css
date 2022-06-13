@@ -195,6 +195,7 @@ nav {
 
 /* #endregion */
 
+/* #region Rows of Images in grids styling */
 .image-row{
   width: 75%;
   align-items: flex-end;
@@ -208,6 +209,24 @@ nav {
   height: 400px;
   margin: 10px;
 }
+
+.image-row-photoshoot{
+  width: 75%;
+  align-items:center;
+  /* padding-top: 55px; */
+  margin-top: 65px;
+  padding-left: 35px;
+  padding-bottom: 30px;
+}
+
+.image-row-photoshoot img{
+  object-fit: contain;
+  width: 45%;
+  height: 800px;
+  
+}
+
+/* #endregion */
 
 #about-section{
   align-items: center;
