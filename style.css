@@ -123,6 +123,8 @@ nav {
   margin: 0 50px;
 }
 
+/* #region Aside List styling */
+
 #aside-list{
   text-align: right;
   margin-right: 35px;
@@ -142,7 +144,7 @@ nav {
 
 #aside-label{
   text-align: center;
- text-align: right;
+  text-align: right;
 }
 
 #aside-list ul{
@@ -165,15 +167,42 @@ nav {
   color: var(--mediumPink);
 }
 
+/* #endregion */
 
-#image-row{
+/* #region Aside Details styling */
+
+#aside-details{
+  text-align: center;
+  margin-right: 35px;
+  width: 25%;
+  float: right;
+  height: 90%;
+  /* width: 200px; */
+  position: fixed;
+  z-index: 1;
+  top: 65px;
+  right: 0;
+  /* background-color: #F8AD9D; */
+  overflow-x: hidden;
+  padding-top: 280px;
+  padding-right: 20px;
+}
+
+#aside-details-label{
+  text-align: center;
+}
+
+
+/* #endregion */
+
+.image-row{
   width: 75%;
   align-items: flex-end;
   padding-top: 20px;
   padding-left: 30px;
 }
 
-#image-row img{
+.image-row img{
   object-fit: contain; 
   width: 30%;
   height: 400px;
