@@ -1,8 +1,19 @@
+:root{
+  --black:#001219;
+  --darkTeal:#006D77;
+  --mediumTeal:#83C5BE;
+  --lightTeal:#EDF6F9;
+  --peach:#FFDAB9;
+  --darkPink: #F08080;
+  --mediumPink:#F4978E;
+  --lightPink:#F5CAC1;
+}
+
 body {
   height: 100vh;
-  color: #001219;
+  color: var(--black);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #EDF6F9;
+  background-color: var(--lightTeal);
 }
 
 h1 {
@@ -78,7 +89,7 @@ h2{
 #meParagraph a {
   text-decoration: none;
   font-style: oblique;
-  color: #F8AD9D;
+  color: var(--mediumPink);
   
 }
 
@@ -98,14 +109,14 @@ h2{
 }
 
 nav {
-  background: #006D77;
+  background: var(--darkTeal);
   backdrop-filter: blur(7px);
   height: 70px;
   width: 100%;
 }
 
 .logo {
-  color: cadetblue;
+  /* color: cadetblue; */
   font-size: 35px;
   font-weight: bold;
   line-height: 80px;
@@ -115,7 +126,7 @@ nav {
 #aside-list{
   text-align: right;
   margin-right: 35px;
-  width: 15%;
+  width: 25%;
   float: right;
   height: 90%;
   /* width: 200px; */
@@ -126,17 +137,30 @@ nav {
   /* background-color: #F8AD9D; */
   overflow-x: hidden;
   padding-top: 280px;
+  padding-right: 20px;
+}
+
+#aside-label{
+  text-align: center;
+ text-align: right;
 }
 
 #aside-list ul{
   list-style: none;
   text-align: right;
+
 }
 
 #aside-list ul li{
   margin-top: 15px;
   font-size: 30px;
 }
+
+#aside-list ul li a{
+  text-decoration: none;
+  color: var(--black);
+}
+
 
 #image-row{
   width: 85%;
@@ -163,8 +187,8 @@ nav {
 }
 
 a.active {
-  background: #F4978E;
-  color: #001219;
+  background: var(--lightPink);
+  color: var(--black);
   padding: 10px 30px;
   border-radius: 50px;
   font-weight: bold;
@@ -189,14 +213,14 @@ nav ul li{
 
 nav ul li a{
   font-size: 25px;
-  color: #001219;
+  color: var(--black);
   text-decoration: none;
   
 }
 
 .burger-button {
   font-size: 30px;
-  color: #F08080;
+  color: var(--darkPink);
   float: right;
   margin-right: 40px;
   line-height: 80px;
@@ -217,7 +241,7 @@ nav ul li a{
   nav ul{
     position:fixed;
     width: 100%;
-    background-color: #EDF6F9;
+    background-color: var(--lightTeal);
     height: 100vh;
     text-align: center;
     top: 60px;
@@ -232,13 +256,17 @@ nav ul li a{
 
   nav ul li a {
     font-size: 25px;
-    color: #001219;
+    color: var(--black);
     text-transform: uppercase;
     text-decoration: none;
   }
 
   #check:checked~ul{
     right: 0;
+  }
+
+  #aside-list{
+    display: none;
   }
 }
 /* #endregion */
