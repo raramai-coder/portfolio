@@ -161,17 +161,23 @@ nav {
   color: var(--black);
 }
 
+#aside-list ul li a:hover{
+  color: var(--mediumPink);
+}
+
 
 #image-row{
-  width: 85%;
+  width: 75%;
   align-items: flex-end;
-  padding-top: 30px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
 #image-row img{
   object-fit: contain; 
   width: 30%;
   height: 400px;
+  margin: 10px;
 }
 
 #about-section{
