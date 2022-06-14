@@ -130,15 +130,13 @@ nav {
   margin-right: 35px;
   width: 25%;
   float: right;
-  height: 90%;
-  /* width: 200px; */
   position: fixed;
   z-index: 1;
-  top: 65px;
+  top: 60;
   right: 0;
   /* background-color: #F8AD9D; */
   overflow-x: hidden;
-  padding-top: 280px;
+  padding-top: 180px;
   padding-right: 20px;
 }
 
