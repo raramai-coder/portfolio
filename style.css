@@ -140,6 +140,7 @@ h2{
 }
 
 /* #endregion */
+
 nav {
   background: var(--darkTeal);
   backdrop-filter: blur(7px);
@@ -236,8 +237,17 @@ nav {
 .image-row img{
   object-fit: contain; 
   width: 30%;
-  height: 400px;
+  height: 450px;
   margin: 10px;
+}
+
+.image-row :hover{
+  width: 32%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--darkPink);
+  background-color: var(--lightPink);
+  max-height: 300px;
 }
 
 .image-row-photoshoot{
