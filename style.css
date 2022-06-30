@@ -439,3 +439,24 @@ Position the "next button" to the right
   to {opacity: 1}
 }
 
+/*#region Design Section */
+ .wireframe-images{
+  /* width: 80vw;
+  margin: auto;
+  max-width: fit-content;
+  margin-left: 0; */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  max-height: 70%;
+  margin-bottom: 15px;
+ }
+
+/*#endregion */
+
+
+
+
+
