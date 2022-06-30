@@ -441,11 +441,6 @@ Position the "next button" to the right
 
 /*#region Design Section */
  .wireframe-images{
-  /* width: 80vw;
-  margin: auto;
-  max-width: fit-content;
-  margin-left: 0; */
-
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -517,6 +512,16 @@ Position the "next button" to the right
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.quuerantine-images{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: fit-content;
+  /* max-height: 20%; */
+  margin-bottom: 15px;
 }
 
 /*#endregion  */
