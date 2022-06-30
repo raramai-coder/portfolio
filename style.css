@@ -456,6 +456,71 @@ Position the "next button" to the right
 
 /*#endregion */
 
+/*#region Exhibitions Section  */
+
+.exhibitions-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.exhibitions-column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 10px 10px;
+}
+
+.exhibitions-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.exhibition-description-text{
+  position: absolute;
+  bottom: 0;
+  background:rgba(244, 151, 142, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: var(--black);
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.exhibition-description-text h3{
+  margin-top: 65%;
+}
+
+.image-container{
+  position: relative;
+}
+
+.image-container:hover .exhibition-description-text{
+  opacity:1;
+}
+
+@media screen and (max-width: 800px) {
+  .exhibitions-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .exhibitions-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*#endregion  */
+
 
 
 
