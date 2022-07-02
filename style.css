@@ -208,19 +208,21 @@ nav {
   width: 25%;
   float: right;
   height: 90%;
-  /* width: 200px; */
   position: fixed;
-  z-index: -1;
-  top: 65px;
+  /* z-index: -1; */
   right: 0;
   /* background-color: #F8AD9D; */
   overflow-x: hidden;
-  padding-top: 280px;
   padding-right: 20px;
 }
 
 #aside-details-label{
   text-align: center;
+}
+
+#aside-details a{
+  text-decoration: none;
+  color: var(--mediumPink);
 }
 
 
@@ -257,6 +259,7 @@ nav {
   margin-top: 65px;
   padding-left: 35px;
   padding-bottom: 30px;
+  /* background-color: #F8AD9D; */
 }
 
 .image-row-photoshoot img{
