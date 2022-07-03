@@ -228,7 +228,7 @@ nav {
 /* #endregion */
 
 /* #region Rows of Images in grids styling */
-.image-row{
+/* .image-row{
   width: 75%;
   align-items: flex-end;
   padding-top: 20px;
@@ -249,15 +249,15 @@ nav {
   border-color: var(--darkPink);
   background-color: var(--lightPink);
   max-height: 300px;
-}
+} */
 
 .image-row-photoshoot{
   width: 75%;
   align-items:center;
   /* padding-top: 55px; */
-  margin-top: 65px;
+  /* margin-top: 65px;
   padding-left: 35px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
   /* background-color: #F8AD9D; */
 }
 
@@ -266,8 +266,73 @@ nav {
   width: 45%;
   height: 800px;
   
+} */
+
+/* #endregion */
+
+/* #region Photography Section */
+
+.photoshoot-row {
+  display: flex;
+  padding: 0 4px;
+  /* background-color: #F08080; */
+  
 }
 
+/* Create four equal columns that sits next to each other */
+.photoshoot-column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 15px 15px;
+}
+
+.photoshoot-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photoshoot-description-text{
+  position: absolute;
+  bottom: 0;
+  background:rgba(244, 151, 142, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: .7s ease;
+  opacity:0;
+  color: var(--black);
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.photoshoot-description-text h3{
+  margin-top: 35%;
+}
+
+.photoshoot-image-container{
+  position: relative;
+}
+
+.photoshoot-image-container:hover .photoshoot-description-text{
+  opacity:1;
+}
+
+@media screen and (max-width: 800px) {
+  .photoshoot-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .photoshoot-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 /* #endregion */
 
 #about-section{
