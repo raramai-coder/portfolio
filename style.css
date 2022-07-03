@@ -51,10 +51,6 @@ h2{
   max-width: 525px;
 }
 
-/* .blog-card :hover{
-  background-color: #fff;
-} */
-
 .blog-card a{
   text-decoration: none;
   color: #001219;
@@ -79,6 +75,11 @@ h2{
   gap: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  #gridContainer{
+    flex-direction:column;
+  }
+}
 
 /* #endregion */
 
@@ -149,7 +150,6 @@ nav {
 }
 
 .logo {
-  /* color: cadetblue; */
   font-size: 35px;
   font-weight: bold;
   line-height: 80px;
@@ -236,28 +236,7 @@ nav {
 /* #endregion */
 
 /* #region Rows of Images in grids styling */
-/* .image-row{
-  width: 75%;
-  align-items: flex-end;
-  padding-top: 20px;
-  padding-left: 30px;
-}
 
-.image-row img{
-  object-fit: contain; 
-  width: 30%;
-  height: 450px;
-  margin: 10px;
-}
-
-.image-row :hover{
-  width: 32%;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: var(--darkPink);
-  background-color: var(--lightPink);
-  max-height: 300px;
-} */
 
 .image-row-photoshoot{
   width: 75%;
@@ -274,7 +253,23 @@ nav {
   width: 45%;
   height: 800px;
   
-} */
+} 
+
+@media screen and (max-width: 800px) {
+  #aside-details{
+    display: none;
+  }
+
+  .image-row-photoshoot img{
+    width: 95%;
+  }
+
+  .image-row-photoshoot{
+    width: 100%;
+  }
+}
+
+
 
 /* #endregion */
 
@@ -332,6 +327,7 @@ nav {
   .photoshoot-column {
     flex: 50%;
     max-width: 50%;
+    z-index: -1;
   }
 }
 
@@ -340,6 +336,7 @@ nav {
   .photoshoot-column {
     flex: 100%;
     max-width: 100%;
+    z-index: -1;
   }
 }
 /* #endregion */
@@ -415,9 +412,11 @@ nav ul li a{
     height: 100vh;
     text-align: center;
     top: 60px;
-    right: -110%;
+    /* right: -110%; */
     transition: all 1s;
     z-index: 5;
+    display: none;
+    /* visibility: hidden; */
   }
 
   nav ul li{
@@ -434,17 +433,29 @@ nav ul li a{
 
   #check:checked~ul{
     right: 0;
-    
+    display: block;
+    /* visibility: visible; */
   }
 
   #aside-list{
     display: none;
+    
   }
+
+  
+
 }
-/* #endregion */
+
+
+
+
 
 
 .animate { transition: transform 0.3s ease-out; }
+/* #endregion */
+
+
+
 
 
 p{
