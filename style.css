@@ -1,7 +1,7 @@
 :root{
   --black:#001219;
   --darkTeal:#006D77;
-  --mediumTeal:#83C5BE;
+  --mediumTeal:#83c1c5;
   --lightTeal:#EDF6F9;
   --peach:#FFDAB9;
   --darkPink: #F08080;
@@ -529,7 +529,43 @@ Position the "next button" to the right
 
 /*#endregion  */
 
+/* #region footer */
+footer{
+  background-color: var(--mediumTeal);
+  height: fit-content;
+  padding-bottom: 15px;
+  display: grid;
+  /* grid-template-columns: 25fr 25fr 25fr 25fr ; */
+  grid-template-columns: 33fr 33fr 33fr;
+  /* flex-direction: column; */
+}
 
+.footer-section{
+  /* width: fit-content; */
+  /* background-color: #006D77; */
+  align-content: center;
+  align-items: center;
+}
+
+.footer-section p{
+  text-align: flex-start;
+  text-emphasis: bold;
+  /* float: center; */
+  color: var(--darkTeal);
+}
+
+.footer-section a{
+  text-decoration: none;
+  color: var(--black);
+  float: center;
+  margin-left: 10px;
+}
+
+.footer-section a:hover{
+  color: var(--darkPink);
+}
+
+/* #endregion */
 
 
 
