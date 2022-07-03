@@ -627,6 +627,9 @@ footer{
   display: grid;
   /* grid-template-columns: 25fr 25fr 25fr 25fr ; */
   grid-template-columns: 33fr 33fr 33fr;
+  bottom: 0vh;
+  /* position: fixed; */
+  width: 100%;
   /* flex-direction: column; */
 }
 
