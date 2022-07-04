@@ -1,4 +1,4 @@
-const observer = lozad();
+const observer = window.lozad();
 observer.observe();
 
 const firstImage = document.querySelector('.firstImage');
