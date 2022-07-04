@@ -159,6 +159,12 @@ nav {
   font-weight: bold;
   line-height: 80px;
   margin: 0 50px;
+  /* max-height: 165px; */
+}
+
+#logo {
+  width: 110px;
+  margin: 0 0 -10px -35px;
 }
 
 /* #region Aside List styling */
@@ -388,10 +394,6 @@ a.active {
   font-weight: bold;
 }
 
-#logo {
-  width: 60px;
-  margin: 0 0 -10px -35px;
-}
 
 /* #region Navigation Styling */
 nav ul{

@@ -1,217 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../style.css" />
-    <script src="https://kit.fontawesome.com/57b092fe03.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/57b092fe03.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../navigation.js"></script>
     <title>API Essay</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <input type="checkbox" name="" id="check" />
-            <label for="check" class="burger-button"><i class="fa-solid fa-bars"></i></label>
-            <label for="logo" class="logo"></label>
-            <img src="/index/Rectangle 3.png" id="logo" />
-            <ul>
-                <li>
-                    <a href="#" id="home" onclick="navigateTo('home',1)">Home</a>
-                </li>
-                <li>
-                    <a href="#" id="about" onclick="navigateTo('about',1)">About</a>
-                </li>
-                <li>
-                    <a href="#" id="photography" onclick="navigateTo('photography',1)">Photography</a>
-                </li>
-                <!-- <li><a href="../developer.html">Development</a></li> -->
-                <li>
-                    <a href="#" id="design" onclick="navigateTo('design',1)">Design</a>
-                </li>
-                <li>
-                    <a href="#" id="blog" onclick="navigateTo('blog',1)">Blog</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="burger-button"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <label for="logo" class="logo"></label>
+        <a href="#" id="logo"
+          ><img
+            src="../index/logo1.png"
+            id="logo"
+            onclick="navigateTo('logo',1)"
+        /></a>
+        <ul>
+          <li>
+            <a href="#" id="home" onclick="navigateTo('home',1)">Home</a>
+          </li>
+          <li>
+            <a href="#" id="about" onclick="navigateTo('about',1)">About</a>
+          </li>
+          <li>
+            <a href="#" id="photography" onclick="navigateTo('photography',1)"
+              >Photography</a
+            >
+          </li>
+          <!-- <li><a href="../developer.html">Development</a></li> -->
+          <li>
+            <a href="#" id="design" onclick="navigateTo('design',1)">Design</a>
+          </li>
+          <li>
+            <a href="#" id="blog" onclick="navigateTo('blog',1)">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <h1 class="p-name">API Essay</h1>
 
     <article class="h-entry">
-        <h2>Introduction</h2>
-        <p>
-        Images are critical to the user experience of my website since my portfolio website showcases my photography. However,
-        my images are heavy (even when pretty optimized) and that contributes to page bloat (Nanwani, 2018). Which has a
-        negative impact on the time users wait before having success to the content on my webpage (Perna, 2020).
-        </p>
-        <p>
-        So it is of utmost importance that images are as optimized for use as possible. Specifically looking at ways to help the
-        browser load them as fast as possible, because image optimization goes beyond just compressing images but also loading
-        them at the right time (Holmes, 2021). One of the ways to do this is through lazy loading (Nanwani,2018).
-        </p>
-        
-        <h2>What is Lazy Loading?</h2>
-        <p>
-        Lazy loading is the deferment of loading of a resource on a webpage or application page until they are needed
-        (Nanwani,2018), instead of loading them at the start. In terms of images this means deferring to load them until they
-        are in view of the user’s window. This helps to improve performance and better manage the use of a device’s resources as
+      <h2>Introduction</h2>
+      <p>
+        Images are critical to the user experience of my website since my
+        portfolio website showcases my photography. However, my images are heavy
+        (even when pretty optimized) and that contributes to page bloat
+        (Nanwani, 2018). Which has a negative impact on the time users wait
+        before having success to the content on my webpage (Perna, 2020).
+      </p>
+      <p>
+        So it is of utmost importance that images are as optimized for use as
+        possible. Specifically looking at ways to help the browser load them as
+        fast as possible, because image optimization goes beyond just
+        compressing images but also loading them at the right time (Holmes,
+        2021). One of the ways to do this is through lazy loading
+        (Nanwani,2018).
+      </p>
+
+      <h2>What is Lazy Loading?</h2>
+      <p>
+        Lazy loading is the deferment of loading of a resource on a webpage or
+        application page until they are needed (Nanwani,2018), instead of
+        loading them at the start. In terms of images this means deferring to
+        load them until they are in view of the user’s window. This helps to
+        improve performance and better manage the use of a device’s resources as
         well as reducing the load and costs for the device (Nanwani,2018).
-        </p>
+      </p>
 
-        <h2>Why Lazy Loading?</h2>
-        <p>
-            The great benefit of lazy loading lies with performance, smaller webpages load faster and because not all resources are
-            being loaded at the start (Nanwani,2018), the size of the webpage is greatly reduced. Leading to better performance as
-            the devices has fewer bytes to download.
-        </p>
-        <p>
-        This has the added benefit of ensuring that users with low bandwidth (in particular users accessing the website form a
-        mobile device (Perna, 2020)) are still able to load and use the webpage earlier, and then process the remaining
-        resources as they are needed. Ensuring that users don’t get frustrated and just leave the website all together (Perna,
+      <h2>Why Lazy Loading?</h2>
+      <p>
+        The great benefit of lazy loading lies with performance, smaller
+        webpages load faster and because not all resources are being loaded at
+        the start (Nanwani,2018), the size of the webpage is greatly reduced.
+        Leading to better performance as the devices has fewer bytes to
+        download.
+      </p>
+      <p>
+        This has the added benefit of ensuring that users with low bandwidth (in
+        particular users accessing the website form a mobile device (Perna,
+        2020)) are still able to load and use the webpage earlier, and then
+        process the remaining resources as they are needed. Ensuring that users
+        don’t get frustrated and just leave the website all together (Perna,
         2020).
-        </p>
+      </p>
 
-        <h2>IntersectionObserver API</h2>
-        <p>
-            It is clear from the description of lazy loading that a core component in achieving it is awareness of when a resource
-            is needed, but more specifically in regard to images, when the image is needed on the viewers screen.
-        </p>
-        <p>
-        According to the MDN Documentation the IntersectionObserver API provides a way to track and observe the changes of a
-        targeted element and its intersection with the document’s viewport (MDN Contributors, 2022). It is configured to be able
-        to track key attributes of the given element in terms of visibility within the viewport. This makes IntersectionObserver
+      <h2>IntersectionObserver API</h2>
+      <p>
+        It is clear from the description of lazy loading that a core component
+        in achieving it is awareness of when a resource is needed, but more
+        specifically in regard to images, when the image is needed on the
+        viewers screen.
+      </p>
+      <p>
+        According to the MDN Documentation the IntersectionObserver API provides
+        a way to track and observe the changes of a targeted element and its
+        intersection with the document’s viewport (MDN Contributors, 2022). It
+        is configured to be able to track key attributes of the given element in
+        terms of visibility within the viewport. This makes IntersectionObserver
         API key to lazy loading.
-        </p>
+      </p>
 
-        <h2>Lozad.js</h2>
-        <p>
-        Lozad.js is a JavaScript API that helps to load images and iframes asynchronously and lazily using the
-        IntersectionObserver API and requiring no dependencies (Saxena, 2021). It uses pure JavaScript to lazily load the
-        elements and is completely free and open source (Saxena, 2021).
-        </p>
-        <p>
-        This API quickly simplifies the developer’s job while being highly performant, light and easy to configure. Reducing the
-        amount of JavaScript code required to perform lazy loading down to two lines.
-        </p>
+      <h2>Lozad.js</h2>
+      <p>
+        Lozad.js is a JavaScript API that helps to load images and iframes
+        asynchronously and lazily using the IntersectionObserver API and
+        requiring no dependencies (Saxena, 2021). It uses pure JavaScript to
+        lazily load the elements and is completely free and open source (Saxena,
+        2021).
+      </p>
+      <p>
+        This API quickly simplifies the developer’s job while being highly
+        performant, light and easy to configure. Reducing the amount of
+        JavaScript code required to perform lazy loading down to two lines.
+      </p>
 
-        <h2>Why Lozad.js?</h2>
-        <p>
-        Lozad is an API that simplifies the developer’s job as they don’t have to get into the specifics of how to use the
-        Intersection Observer API. Lozad handles all of this. Which is a huge part of what makes an API useful, how it abstracts
-        the client’s use of another application or software without any loss in functionality (MuleSoft,2022).
-        </p>
-        <p>
-        Furthermore, the great advantage that Lozad has over other APIs of similar function is that it uses the
-        IntersectionObserver API, instead of looking up the scroll event or using a periodic timer and getting the bounding Rect
-        of an element’s parent. This is painfully slow and forces the browser to re-layout the entire page which cause a lot of
-        bloat (Saxena, 2021).
-        </p>
+      <h2>Why Lozad.js?</h2>
+      <p>
+        Lozad is an API that simplifies the developer’s job as they don’t have
+        to get into the specifics of how to use the Intersection Observer API.
+        Lozad handles all of this. Which is a huge part of what makes an API
+        useful, how it abstracts the client’s use of another application or
+        software without any loss in functionality (MuleSoft,2022).
+      </p>
+      <p>
+        Furthermore, the great advantage that Lozad has over other APIs of
+        similar function is that it uses the IntersectionObserver API, instead
+        of looking up the scroll event or using a periodic timer and getting the
+        bounding Rect of an element’s parent. This is painfully slow and forces
+        the browser to re-layout the entire page which cause a lot of bloat
+        (Saxena, 2021).
+      </p>
 
-        <h2>How has Lozad.js enhanced my website?</h2>
-        <p>
-            As well as using Lozad to perform lazy loading I also used a feature of the API called triggerLoad, which loads an image
-            before it is in the viewport to load the first visible images of my webpages. This means that I am able to make sure
-            users are able to see the first images they need to be seeing as soon as the page loads.
-        </p>
-        <p>
-            This has greatly reduced the waiting time on my image heavy webpages than in the past.
-        </p>
-        <p>
-        Furthermore, lazy loading has helped make my website less resource heavy without me having to compromise on the number
-        of images I can put on a webpage. Previously when all images were being loaded regardless of whether or not they were in
-        view, I felt I had to compromise and remove some images from a webpage in order to increase performance. But now whether
-        I have 10 or 16 images on the website, the performance is still optimized. So, I don’t have to compromise on showcasing
-        my favourite images from my work.
-        </p>
-        <p>
-        And previously images were loaded first depending on size so that meant that if a smaller image was at the bottom of the
-        page it would show before a larger image at the top of the page, but this has no benefit because the user cannot see
-        these images at the bottom of the page. So now with lazy loading all resources are directed to loading images in the
-        viewport and this benefits the user.
-        </p>
+      <h2>How has Lozad.js enhanced my website?</h2>
+      <p>
+        As well as using Lozad to perform lazy loading I also used a feature of
+        the API called triggerLoad, which loads an image before it is in the
+        viewport to load the first visible images of my webpages. This means
+        that I am able to make sure users are able to see the first images they
+        need to be seeing as soon as the page loads.
+      </p>
+      <p>
+        This has greatly reduced the waiting time on my image heavy webpages
+        than in the past.
+      </p>
+      <p>
+        Furthermore, lazy loading has helped make my website less resource heavy
+        without me having to compromise on the number of images I can put on a
+        webpage. Previously when all images were being loaded regardless of
+        whether or not they were in view, I felt I had to compromise and remove
+        some images from a webpage in order to increase performance. But now
+        whether I have 10 or 16 images on the website, the performance is still
+        optimized. So, I don’t have to compromise on showcasing my favourite
+        images from my work.
+      </p>
+      <p>
+        And previously images were loaded first depending on size so that meant
+        that if a smaller image was at the bottom of the page it would show
+        before a larger image at the top of the page, but this has no benefit
+        because the user cannot see these images at the bottom of the page. So
+        now with lazy loading all resources are directed to loading images in
+        the viewport and this benefits the user.
+      </p>
 
-        <h2>Technical Challenges</h2>
-        <p>
-        Since most people use existing frameworks like react native or jQuery it was difficult to find tutorials for Lozad on a
-        pure JavaScript webpage. But Once I got the hang of it I realized it was relatively simple and I only had to write two
-        lines of code.
-        </p>
-        <p>
-            Another issue is that I wanted a placeholder image for the images before they load in case the user scrolls down before
-            the browser is able to load the image in their viewport. At the moment it shows the broken image icon and alt text, but
-            that communicates error to the user so they might feel as though the website is not working properly.
-        </p>
-        <p>
-            However, when I placed a placeholder square using Lozad this image does not disappear once the image Is loading meaning
-            that the placeholder image would be peeking from underneath the loaded image.
-        </p>
+      <h2>Technical Challenges</h2>
+      <p>
+        Since most people use existing frameworks like react native or jQuery it
+        was difficult to find tutorials for Lozad on a pure JavaScript webpage.
+        But Once I got the hang of it I realized it was relatively simple and I
+        only had to write two lines of code.
+      </p>
+      <p>
+        Another issue is that I wanted a placeholder image for the images before
+        they load in case the user scrolls down before the browser is able to
+        load the image in their viewport. At the moment it shows the broken
+        image icon and alt text, but that communicates error to the user so they
+        might feel as though the website is not working properly.
+      </p>
+      <p>
+        However, when I placed a placeholder square using Lozad this image does
+        not disappear once the image Is loading meaning that the placeholder
+        image would be peeking from underneath the loaded image.
+      </p>
 
-        <h2>Conclusion</h2>
-        <p>
-        Using Lozad has improved the performance of my website. And I will continue to use it.
-        </p>
-        <p>
-            I do need to work on using the right placeholder image and making that functionality work. Next, I will look into using
-            the dominant colour placeholder technique.
-        </p>
-        <p>
-            I need to add buffer time for images to load to prevent horrible things happening when the user scrolls really fast down
-            the page. So essentially loading the image when it is a few hundred pixels below the viewport should help with this.
-        </p>
+      <h2>Conclusion</h2>
+      <p>
+        Using Lozad has improved the performance of my website. And I will
+        continue to use it.
+      </p>
+      <p>
+        I do need to work on using the right placeholder image and making that
+        functionality work. Next, I will look into using the dominant colour
+        placeholder technique.
+      </p>
+      <p>
+        I need to add buffer time for images to load to prevent horrible things
+        happening when the user scrolls really fast down the page. So
+        essentially loading the image when it is a few hundred pixels below the
+        viewport should help with this.
+      </p>
 
-        <h2>Sources</h2>
-        <p>
-            Ben Holmes. 2021. Picture perfect image optimization for any web framework. [online] Available at: <a class="sources-link" href="https://bholmes.dev/blog/picture-perfect-image-optimization">https://bholmes.dev/blog/picture-perfect-image-optimization</a>
-            
-        </p>
-        <p>
-            MDN Contributors, 2022. IntersectionObserver - Web APIs | MDN. [online] Developer.mozilla.org. Available at: <a class="sources-link" href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver#browser_compatibility">https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver#browser_compatibility</a>
-            
-        </p>
-        <p>
-            MuleSoft. 2022. What is an API? (Application Programming Interface) | MuleSoft. [online] Available at: <a class="sources-link" href="https://www.mulesoft.com/resources/api/what-is-an-api">https://www.mulesoft.com/resources/api/what-is-an-api</a>
-            
-        </p>
-        <p>
-            Nanwani, R., 2018. The Complete Guide to Lazy Loading Images | CSS-Tricks. [online] CSS-Tricks. Available at: <a class="sources-link" href="https://css-tricks.com/the-complete-guide-to-lazy-loading-images/#top-of-site">https://css-tricks.com/the-complete-guide-to-lazy-loading-images/#top-of-site</a>
-            
-        </p>
-        <p>
-            Perna, M., 2020. Five Ways to Lazy Load Pages for Better Perfomance. [online] SitePoint. Available at: <a class="sources-link" href="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/#:~:text=Lazy%20loading%20images%20means%20loading,won't%20even%20be%20loaded">https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/#:~:text=Lazy%20loading%20images%20means%20loading,won't%20even%20be%20loaded</a>
-            
-        </p>
-        <p style="padding-bottom: 25px">
-            Saxena, A., 2021. GitHub - ApoorvSaxena/lozad.js: 🔥 Highly performant, light ~1kb and configurable lazy loader in pure
-            JS with no dependencies for responsive images, iframes and more. [online] GitHub. Available at: <a class="sources-link" href="https://github.com/ApoorvSaxena/lozad.js">https://github.com/ApoorvSaxena/lozad.js</a>
-            
-        </p>
+      <h2>Sources</h2>
+      <p>
+        Ben Holmes. 2021. Picture perfect image optimization for any web
+        framework. [online] Available at:
+        <a
+          class="sources-link"
+          href="https://bholmes.dev/blog/picture-perfect-image-optimization"
+          >https://bholmes.dev/blog/picture-perfect-image-optimization</a
+        >
+      </p>
+      <p>
+        MDN Contributors, 2022. IntersectionObserver - Web APIs | MDN. [online]
+        Developer.mozilla.org. Available at:
+        <a
+          class="sources-link"
+          href="https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver#browser_compatibility"
+          >https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver#browser_compatibility</a
+        >
+      </p>
+      <p>
+        MuleSoft. 2022. What is an API? (Application Programming Interface) |
+        MuleSoft. [online] Available at:
+        <a
+          class="sources-link"
+          href="https://www.mulesoft.com/resources/api/what-is-an-api"
+          >https://www.mulesoft.com/resources/api/what-is-an-api</a
+        >
+      </p>
+      <p>
+        Nanwani, R., 2018. The Complete Guide to Lazy Loading Images |
+        CSS-Tricks. [online] CSS-Tricks. Available at:
+        <a
+          class="sources-link"
+          href="https://css-tricks.com/the-complete-guide-to-lazy-loading-images/#top-of-site"
+          >https://css-tricks.com/the-complete-guide-to-lazy-loading-images/#top-of-site</a
+        >
+      </p>
+      <p>
+        Perna, M., 2020. Five Ways to Lazy Load Pages for Better Perfomance.
+        [online] SitePoint. Available at:
+        <a
+          class="sources-link"
+          href="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/#:~:text=Lazy%20loading%20images%20means%20loading,won't%20even%20be%20loaded"
+          >https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/#:~:text=Lazy%20loading%20images%20means%20loading,won't%20even%20be%20loaded</a
+        >
+      </p>
+      <p style="padding-bottom: 25px">
+        Saxena, A., 2021. GitHub - ApoorvSaxena/lozad.js: 🔥 Highly performant,
+        light ~1kb and configurable lazy loader in pure JS with no dependencies
+        for responsive images, iframes and more. [online] GitHub. Available at:
+        <a class="sources-link" href="https://github.com/ApoorvSaxena/lozad.js"
+          >https://github.com/ApoorvSaxena/lozad.js</a
+        >
+      </p>
     </article>
 
     <footer>
-        <div class="footer-section">
-            <img src="../index/Rectangle 3.png" alt="">
-            <p>Immortalising the world through Camera.</p>
+      <div class="footer-section">
+        <img src="../index/Rectangle 3.png" alt="" />
+        <p>Immortalising the world through Camera.</p>
+      </div>
+      <div class="footer-section">
+        <p>Most Viewed Photoshoots</p>
+        <div>
+          <a href="../photography/alixmd/alixmd.html">Ali x MD</a>
+          <a href="../photography/phedisoxgrad/phedisoxgrad.html"
+            >Phediso x Grad</a
+          >
+          <a href="../photography/conciliaxgrad/conciliaxgrad.html"
+            >Concilia x Grad</a
+          >
         </div>
-        <div class="footer-section">
-            <p>Most Viewed Photoshoots</p>
-            <div>
-                <a href="../photography/alixmd/alixmd.html">Ali x MD</a>
-                <a href="../photography/phedisoxgrad/phedisoxgrad.html">Phediso x Grad</a>
-                <a href="../photography/conciliaxgrad/conciliaxgrad.html">Concilia x Grad</a>
-            </div>
-            <div>
-                <a href="../photography/thuliexathletic/thuliexathletic.html">Thulie x Athletic</a>
-                <a href="../photography/setsaxbraamaboveground/setsaxbraam.html">Setsa x Braam Above Ground</a>
-                <a href="../photography/conciliaxjacaranda/conciliaxjacaranda.html">Concilia x Jacaranda</a>
-            </div>
+        <div>
+          <a href="../photography/thuliexathletic/thuliexathletic.html"
+            >Thulie x Athletic</a
+          >
+          <a href="../photography/setsaxbraamaboveground/setsaxbraam.html"
+            >Setsa x Braam Above Ground</a
+          >
+          <a href="../photography/conciliaxjacaranda/conciliaxjacaranda.html"
+            >Concilia x Jacaranda</a
+          >
         </div>
-        <div class="footer-section">
-            <p>Exhibitions</p>
-            <a href="../photography/exhibitions/queerantine/queerantine.html">Quuerantine</a>
-        </div>
+      </div>
+      <div class="footer-section">
+        <p>Exhibitions</p>
+        <a href="../photography/exhibitions/queerantine/queerantine.html"
+          >Quuerantine</a
+        >
+      </div>
     </footer>
-</body>
+  </body>
 </html>

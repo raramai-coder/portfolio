@@ -6,6 +6,9 @@ function navigateTo(pageName, foldersToTraverse) {
     case "home":
       navLink.href = siteURL + "index.html";
       break;
+    case "logo":
+      navLink.href = siteURL + "index.html";
+      break;
     case "about":
       navLink.href = siteURL + "about/about.html";
       break;
