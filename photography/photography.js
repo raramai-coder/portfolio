@@ -1,12 +1,17 @@
 function highlightCorrespondingElement(correspondingElement, elementID, enter) {
     
     let element = document.getElementById(elementID);
-    
-    if(correspondingElement=="image"){
+
+    if(window.innerWidth>600){
+        if(correspondingElement=="image"){
         highlightCorrespondingImage(element, enter);
-    }else{
+        }else{
         highlightCorrespondingLink(element, enter);
+        }
+    }else{
+        console.log("here");
     }
+    
 }
 
 function highlightCorrespondingImage(image, enter) {

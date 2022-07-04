@@ -261,7 +261,7 @@ nav {
   
 } 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   #aside-details{
     display: none;
   }
@@ -332,8 +332,29 @@ nav {
 @media screen and (max-width: 800px) {
   .photoshoot-column {
     flex: 50%;
-    max-width: 50%;
+    max-width: 65%;
     z-index: -1;
+  }
+
+  #aside-list {
+    display: none;
+  
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .photoshoot-column {
+    flex: 100%;
+    max-width: 100%;
+    z-index: -1;
+  }
+
+  #aside-list {
+    display: none;
+  }
+
+  .exhibitions-row{
+    max-width: 100%;
   }
 }
 
@@ -441,11 +462,6 @@ nav ul li a{
     right: 0;
     display: block;
     /* visibility: visible; */
-  }
-
-  #aside-list{
-    display: none;
-    
   }
 
   

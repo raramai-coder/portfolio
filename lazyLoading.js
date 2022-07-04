@@ -1,14 +1,20 @@
 const observer = window.lozad();
 observer.observe();
 
-// const observer = window.lozad('.lozad',{
-//     load:function(el){
-//         el.src = el.dataset.src;
-//         // el.onload=function(){
-//         //     el.classList.add('fade')
-//         // }
-//     }
-// }).observe()
+if(window.innerWidth<801){
+    observer.observe();
+}else{
+   var images = document.getElementsByClassName("lozad");
+   for(var i=0;i<images.length;i++){
+    
+    if(!(images[i].class=="firstImage")||!images[i].class==("secondImage")){
+        let source = images[i].getAttribute('data-src');
+        images[i].src = source;
+    }
+   }
+}
+
+
 
 const firstImage = document.querySelector('.firstImage');
 observer.triggerLoad(firstImage);

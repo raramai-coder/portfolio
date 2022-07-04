@@ -94,8 +94,9 @@
             <a href="phedisoxgrad/phedisoxgrad.html"></a>
               <div class="photoshoot-image-container"  onmouseover="highlightCorrespondingElement('link','pxglink', true)" onmouseleave="highlightCorrespondingElement('link','pxglink', false)">
                 <img
-                  src="phedisoxgrad/phedi1.JPG"
+                  data-src="phedisoxgrad/phedi1.JPG"
                   alt="Phediso x Grad Photoshoot."
+                  class="lozad firstImage"
                 />
                 <div class="photoshoot-description-text" id="pxgimage">
                   <h3>Phediso x Grad</h3>
@@ -105,7 +106,7 @@
 
             <a href="letishaxskyline/letishaxskyline.html">
               <div class="photoshoot-image-container"  onmouseover="highlightCorrespondingElement('link','lxslink', true)" onmouseleave="highlightCorrespondingElement('link','lxslink', false)">
-                <img src="letishaxskyline/let1.jpg" alt="Letisha x Skyline Photoshoot." />
+                <img data-src="letishaxskyline/let1.jpg" class="lozad secondImage" alt="Letisha x Skyline Photoshoot." />
                 <div class="photoshoot-description-text" id="lxsimage">
                   <h3>Letisha x Skyline</h3>
                 </div>
@@ -228,5 +229,7 @@
         <p>Two Woke Girls</p>
       </div> -->
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="../../lazyLoading.js"></script>
   </body>
 </html>
