@@ -51,10 +51,6 @@ h2{
   max-width: 525px;
 }
 
-/* .blog-card :hover{
-  background-color: #fff;
-} */
-
 .blog-card a{
   text-decoration: none;
   color: #001219;
@@ -79,6 +75,16 @@ h2{
   gap: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  #gridContainer{
+    flex-direction:column;
+  }
+}
+
+.sources-link{
+  text-decoration: none;
+  color: var(--darkPink);
+}
 
 /* #endregion */
 
@@ -149,7 +155,6 @@ nav {
 }
 
 .logo {
-  /* color: cadetblue; */
   font-size: 35px;
   font-weight: bold;
   line-height: 80px;
@@ -184,10 +189,15 @@ nav {
 
 }
 
-#aside-list ul li{
+.aside-link{
   margin-top: 15px;
   font-size: 30px;
 }
+
+/* #aside-list ul li{
+  margin-top: 15px;
+  font-size: 30px;
+} */
 
 #aside-list ul li a{
   text-decoration: none;
@@ -195,9 +205,12 @@ nav {
 }
 
 #aside-list ul li a:hover{
-  color: var(--mediumPink);
+  color: var(--mediumPink)!important;
 }
 
+/* #aside-list ul li a:hover ~ .photoshoot-description-text{
+  opacity:1;
+} */
 /* #endregion */
 
 /* #region Aside Details styling */
@@ -228,32 +241,12 @@ nav {
 /* #endregion */
 
 /* #region Rows of Images in grids styling */
-/* .image-row{
-  width: 75%;
-  align-items: flex-end;
-  padding-top: 20px;
-  padding-left: 30px;
-}
 
-.image-row img{
-  object-fit: contain; 
-  width: 30%;
-  height: 450px;
-  margin: 10px;
-}
-
-.image-row :hover{
-  width: 32%;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: var(--darkPink);
-  background-color: var(--lightPink);
-  max-height: 300px;
-} */
 
 .image-row-photoshoot{
   width: 75%;
   align-items:center;
+  margin-top: 25px;
   /* padding-top: 55px; */
   /* margin-top: 65px;
   padding-left: 35px;
@@ -266,7 +259,23 @@ nav {
   width: 45%;
   height: 800px;
   
-} */
+} 
+
+@media screen and (max-width: 1000px) {
+  #aside-details{
+    display: none;
+  }
+
+  .image-row-photoshoot img{
+    width: 95%;
+  }
+
+  .image-row-photoshoot{
+    width: 100%;
+  }
+}
+
+
 
 /* #endregion */
 
@@ -274,16 +283,17 @@ nav {
 
 .photoshoot-row {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 4px;
-  /* background-color: #F08080; */
   
 }
 
 /* Create four equal columns that sits next to each other */
 .photoshoot-column {
-  flex: 30%;
-  max-width: 30%;
+  flex: 33%;
+  max-width: 33%;
   padding: 15px 15px;
+  /* background-color: #F08080; */
 }
 
 .photoshoot-column img {
@@ -308,7 +318,7 @@ nav {
 }
 
 .photoshoot-description-text h3{
-  margin-top: 35%;
+  margin-top: 65%;
 }
 
 .photoshoot-image-container{
@@ -316,13 +326,35 @@ nav {
 }
 
 .photoshoot-image-container:hover .photoshoot-description-text{
-  opacity:1;
+  opacity:1 !important;
 }
 
 @media screen and (max-width: 800px) {
   .photoshoot-column {
     flex: 50%;
-    max-width: 50%;
+    max-width: 65%;
+    z-index: -1;
+  }
+
+  #aside-list {
+    display: none;
+  
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .photoshoot-column {
+    flex: 100%;
+    max-width: 100%;
+    z-index: -1;
+  }
+
+  #aside-list {
+    display: none;
+  }
+
+  .exhibitions-row{
+    max-width: 100%;
   }
 }
 
@@ -331,6 +363,7 @@ nav {
   .photoshoot-column {
     flex: 100%;
     max-width: 100%;
+    z-index: -1;
   }
 }
 /* #endregion */
@@ -406,9 +439,11 @@ nav ul li a{
     height: 100vh;
     text-align: center;
     top: 60px;
-    right: -110%;
+    /* right: -110%; */
     transition: all 1s;
     z-index: 5;
+    display: none;
+    /* visibility: hidden; */
   }
 
   nav ul li{
@@ -425,17 +460,24 @@ nav ul li a{
 
   #check:checked~ul{
     right: 0;
-    
+    display: block;
+    /* visibility: visible; */
   }
 
-  #aside-list{
-    display: none;
-  }
+  
+
 }
-/* #endregion */
+
+
+
+
 
 
 .animate { transition: transform 0.3s ease-out; }
+/* #endregion */
+
+
+
 
 
 p{
@@ -524,6 +566,7 @@ Position the "next button" to the right
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+
 }
 
 /* Create four equal columns that sits next to each other */
@@ -601,6 +644,9 @@ footer{
   display: grid;
   /* grid-template-columns: 25fr 25fr 25fr 25fr ; */
   grid-template-columns: 33fr 33fr 33fr;
+  bottom: 0vh;
+  /* position: fixed; */
+  width: 100%;
   /* flex-direction: column; */
 }
 
@@ -630,6 +676,19 @@ footer{
 }
 
 /* #endregion */
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from{
+    opacity:0;
+  }to{
+    opacity:1
+  }
+}
 
 
 
