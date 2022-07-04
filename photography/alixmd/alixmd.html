@@ -11,6 +11,8 @@
       src="https://kit.fontawesome.com/57b092fe03.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="../../lazyLoading.js"></script>
     <title>Ali x MD</title>
   </head>
   <body>
@@ -57,10 +59,14 @@
 
       <section class="image-row-photoshoot">
         <img
+          id="firstImage"
+          class="lozad"
           src="ali1.JPG"
           alt="Young woman with her hand on her hip smiling at camera wearing a formal dress."
         />
         <img
+          id="secondImage"
+          class="lozad"
           src="ali2.JPG"
           alt=" Young woman smiling in focus with blurry green landscape in background"
         />
@@ -68,6 +74,7 @@
 
       <section class="image-row-photoshoot">
         <img
+          class="lozad"
           src="ali3.JPG"
           alt="Young woman looking to the left smiling wearing a bedazzled black dress at her matric dance"
         />
