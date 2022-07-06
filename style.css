@@ -280,6 +280,10 @@ nav {
   .image-row-photoshoot{
     width: 100%;
   }
+
+  .footer-section{
+    display: none;
+  }
 }
 
 
