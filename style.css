@@ -344,7 +344,7 @@ nav {
   .photoshoot-column {
     flex: 50%;
     max-width: 65%;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   #aside-list {
@@ -357,7 +357,7 @@ nav {
   .photoshoot-column {
     flex: 100%;
     max-width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   #aside-list {
@@ -374,7 +374,7 @@ nav {
   .photoshoot-column {
     flex: 100%;
     max-width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
   }
 }
 /* #endregion */
